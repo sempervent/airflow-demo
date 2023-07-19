@@ -56,6 +56,7 @@ services:
 
   scheduler:
     <<: *airflow-common
+    command: scheduler
     healthcheck:
       test: ["CMD-SHELL", "[ -f /usr/local/airflow/airflow-scheduler.pid ]"]
       interval: 30s
