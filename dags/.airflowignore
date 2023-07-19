@@ -1,0 +1,3 @@
+# specify files for airflow to ignore here
+# useful for when you have DAGs look for modules
+dummy_dag.py
